@@ -1,0 +1,91 @@
+html,body {
+    margin: 1em 4em 4em 4em;
+    top: 0;
+    left: 0;
+    font-family: 'Special Elite', cursive; 
+}
+
+.typewriter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 2090px;
+    background-color: black;
+    float: center;
+    border: 10px solid;
+    border-color: white;
+    padding: 50px;
+    box-shadow: 20px 20px #fd7099;
+    text-align: left;
+}
+
+.letter {
+    margin-left: 75px;
+    white-space: nowrap;
+    overflow: hidden; 
+    transform: translateY(-50%);
+}
+
+.letter {
+    animation: typewriter 3s steps(40) 1s 1 normal both;
+}
+
+@keyframes typewriter { 
+    from {
+        width:0;
+    }
+    to {
+        width: 20em;
+    }
+}
+
+
+#content {
+    font-family: 'Homemade Apple', cursive; 
+    font-size: 25px;
+    color: #fd7099;
+    float: center;
+    display: inline;
+}
+
+.line1{
+    font-family: 'Special Elite', cursive; 
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+.line2{
+    font-family: 'Special Elite', cursive; 
+    font-size: 25px;
+    text-align: left;
+    color: white;
+}	
+
+.line3{
+    font-family: 'Special Elite', cursive; 
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    line-height: 0
+}
+
+.line4{
+    font-family: 'Special Elite', cursive; 
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    font-weight: bolder;
+    line-height: 0
+}
+
+.line5{
+    font-family: 'Special Elite', cursive; 
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+
