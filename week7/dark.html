@@ -18,6 +18,19 @@
 		background-color: #3F4E4B;
 	}
 
+	@keyframes theFrames {
+ 		from {left:-50px;}
+		to {left: 121px;}
+		0% {color: #E5E5E5;}
+		100% {color: transparent;}
+	}
+
+	@keyframes exampleOne {
+ 		0% {color: transparent;}
+ 		50% {color: #E5E5E5;}
+ 		100% {color: transparent;}
+	}
+
 	.heading{
    		position: absolute;
    		font-family: Misto;
@@ -28,8 +41,15 @@
 		text-align: left;
 		left: 121px;
 		top: -34px;
-		color: #E0E2DB;
+		color: transparent;
 	}
+
+	.heading{
+		animation-name: theFrames;
+  		animation-duration: 3.7s;
+  		animation-iteration-count: 1;
+	}
+
 
 	.secondhead{
 		position: absolute;
@@ -44,17 +64,67 @@
 		left: 121px;
 		top: 121px;
 		border-radius: nullpx;
-		color: #E0E2DB;
+		color: transparent;
 	}
 
-	@keyframes example {
+	.secondhead{
+		animation-name: theFrames;
+  		animation-duration: 3.7s;
+  		animation-iteration-count: 1;
+	}
+
+	.headingTwo{
+   		position: absolute;
+   		font-family: Misto;
+		font-size: 149px;
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0em;
+		text-align: left;
+		left: 121px;
+		top: -34px;
+		color: transparent;
+	}
+
+	.headingTwo{
+		animation-name: exampleOne;
+		animation-delay: 3.5s;
+  		animation-duration: 4s;
+  		animation-iteration-count: infinite;
+	}
+
+
+	.secondheadTwo{
+		position: absolute;
+   		font-family: Misto;
+		font-size: 160px;
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0em;
+		text-align: left;
+		height: 165px;
+		width: 695px;
+		left: 121px;
+		top: 121px;
+		border-radius: nullpx;
+		color: transparent;
+	}
+
+	.secondheadTwo{
+		animation-name: exampleOne;
+		animation-delay: 3.5s;
+  		animation-duration: 4s;
+  		animation-iteration-count: infinite;
+	}
+
+	@keyframes examplee {
  		0% {color: #B8BDB5;}
  		50% {color: #ECD994;}
  		100% {color: #B8BDB5;}
 	}
 
 	.body{
-		position: absolute;
+		position: fixed;
 		font-family: Futura;
 		font-size: 60px;
 		font-style: normal;
@@ -70,7 +140,7 @@
 		color: #B8BDB5;
 		-webkit-text-fill-color: transparent;
 		-webkit-text-stroke-width: 2px;
-		animation-name: example;
+		animation-name: examplee;
   		animation-duration: 2s;
   		animation-iteration-count: infinite;
 	}
@@ -128,14 +198,17 @@
 
 <body>
 
-	<div class="heading">
-		<p>THE AM</p>
-	</div>
-	<div class="secondhead">
-		<p>PARTY</p>
+	<div class="theparty">
+		<p class="heading">THE PM</p>
+		<p class="secondhead">PARTY</p>
 	</div>
 
-	<a href="darkbody.html" class="body">
+	<div class="thepartytwo">
+		<p class="headingTwo">THE PM</p>
+		<p class="secondheadTwo">PARTY</p>
+	</div>
+
+	<a href="body.html" class="body">
 		<p>get</p>
 		<p>invited</p>
 	</a>
