@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<style type="text/css">
+
+	html,body {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-flex {
+		width:98%;
+		height:100vh;
+		padding:1%;
+		display:inline-flex;
+		flex-wrap:nowrap;
+	}
+
+	.main {
+		position: absolute;
+		width: 690px;
+		height: 688px;
+		left: 39px;
+		top: 34px;
+		background-color:#E9E6E6;
+		flex-grow: 4;
+		margin-right:1%;
+	}
+
+	.main h2 {
+		position: absolute;
+		width: 245px;
+		height: 77px;
+		left: 19px;
+		top: 64px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 66px;
+		line-height: 77px;
+	}
+
+	.main h1 {
+		position: absolute;
+		width: 671px;
+		height: 258px;
+		left: 8px;
+		top: 125px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 220px;
+		line-height: 58px;
+	}
+
+	.main h3 {
+		position: absolute;
+		width: 202px;
+		height: 77px;
+		left: 477px;
+		top: 345px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 66px;
+		line-height: 58px;
+	}
+
+	.circless {
+		position: absolute;
+		width: 597px;
+		height: 125px;
+		left: 85px;
+		top: 818px;
+	}
+
+	.bg {
+		position: absolute;
+		width: 690px;
+		height: 221px;
+		left: 39px;
+		top: 760px;
+		background-color: #E9E6E6;
+		z-index: -10;
+		margin-bottom: 40px;
+	}
+
+</style>
+
+<div class="section-flex">
+<div class="main">
+	<h2>This is a</h2>
+	<h1>Simple</h1>
+	<h3>Design</h3>
+</div>
+
+<div>
+	<img src="assets/ipad/Vector.png" class="circless">
+</div>
+
+<div class="bg">
+</div>
+
+</body>
+</html>
