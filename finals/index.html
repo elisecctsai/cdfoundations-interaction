@@ -114,7 +114,7 @@
 	}
 
 	@keyframes theFramessix {
- 		from {top:-50px;}
+ 		from {top: -50px;}
 		to {top: 260px;}
 	}
 
@@ -136,12 +136,24 @@
 	.bg1{
 		width: 960px;
 		height: auto;
+		animation-name: formoon;
+  		animation-duration: 4s;
+  		animation-iteration-count: infinite;
 	}
-
 
 	.bg2{
 		width: 250px;
 		height: auto;
+		opacity: 100%;
+		filter: brightness(100%);
+  		-webkit-filter: blur(0);
+   		filter: blur(0);
+	}
+
+	.bg2:hover {
+		filter: brightness(1%);
+  		-webkit-filter: blur(3px);
+   		filter: blur(3px);
 	}
 
 	@keyframes formoon {
@@ -195,8 +207,10 @@
 	<div class="background">
 		<img class="bg1" src="assets/background/house.png"
 		style="position: absolute; top: 235px; left: 10px; z-index: 10;">
+		<a href="https://www.youtube.com/watch?v=gbLyHZmmFMc&t=21s&ab_channel=elisecctsai" target="_blank">
 		<img class="bg2" src="assets/background/texts.png"
 		style="position: absolute; top: 480px; left: 1150px; opacity: 0.9;">
+		</a>
 		<img class="bg3" src="assets/background/moon.png"
 		style="position: absolute; top: 0px; left: 50px;">
 	</div>
