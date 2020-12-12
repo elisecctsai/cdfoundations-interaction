@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drinks and diaries</title>
+</head>
+
+<style type="text/css">
+
+	body, html{
+		background-color: black;
+		width: 100%;
+		height: 100%;
+	}
+
+	#main {
+		top: 100px;
+		height:80vh;
+		width:100%;
+		overflow-x:scroll;
+		overflow-y:hidden;
+		white-space:nowrap;
+		scroll-snap-type: x mandatory;
+	}
+
+	.featured {
+		display:inline-block;
+		overflow:visible;
+		vertical-align:top;
+		margin:0;
+		scroll-snap-align: start;
+	}
+
+	.featured img {
+		margin: 1% 0%;
+		object-fit: cover;
+	}
+
+	#selector {
+		margin: 5% 0%;
+		text-align:center;
+	}
+
+	.option {
+		display:inline-block;
+		margin:0% 0.5%;
+		width:1em;
+		height:1em;
+		background-color:grey;
+		border-radius:50%;
+		cursor:pointer;
+		transition:0.25s ease-in-out;
+	}
+
+	.option:hover {
+		background-color:white;
+	}
+
+	.back{
+		filter: blur(0px);
+	}
+
+  	.back:hover{
+   		filter: blur(2px);
+   	}
+
+</style>
+
+<body>
+
+	<div class="back">
+		<a href="index.html">
+		<img class="back" src="assets/title/dnd1.png" 
+		style="position: absolute; top: 620px; left: 975px; height: 42px; width: auto;">
+		</a>
+	</div>
+
+	<div id='main'>
+ 	<div class='featured' id='post1'>
+		<img src="assets/bnbimg/tokyo.png" style="left: 200px; border-radius: 136px; width: 850px; height: auto;">
+	</div>
+	<div class='featured' id='post2'>
+		<img src="assets/bnbimg/paloma.png" style="background: url(image.png); border-radius: 136px; width: 1050px; height: auto;">
+	</div>
+	<div class='featured' id='post3'>
+		<img src="assets/bnbimg/bloody.png" style="background: url(image.png); border-radius: 136px; width: 950px; height: auto;">
+	</div>
+	<div class='featured' id='post4'>
+		<img src="assets/bnbimg/bourbon.png" style="background: url(image.png); border-radius: 136px; width: 1050px; height: auto;">
+	</div>
+	<div class='featured' id='post5'>
+		<img src="assets/bnbimg/good.png" style="background: url(image.png); border-radius: 136px; width: 950px; height: auto;">
+	</div>
+	<div class='featured' id='post6'>
+		<img src="assets/bnbimg/manhattan.png" style="background: url(image.png); border-radius: 136px; width: 1000px; height: auto;">
+	</div>
+	<div class='featured' id='post7'>
+		<img src="assets/bnbimg/martini.png" style="background: url(image.png); border-radius: 136px; width: 1050px; height: auto;">
+	</div>
+	<div class='featured' id='post8'>
+		<img src="assets/bnbimg/shots.png" style="background: url(image.png); border-radius: 136px; width: 1000px; height: auto;">
+	</div>
+	<div class='featured' id='post9'>
+		<img src="assets/bnbimg/white.png" style="background: url(image.png); border-radius: 136px; width: 1100px; height: auto;">
+	</div>
+	</div>
+
+	<div id='selector'>
+		<div class='option' id='option1'></div>
+		<div class='option' id='option2'></div>
+		<div class='option' id='option3'></div>
+		<div class='option' id='option4'></div>
+		<div class='option' id='option5'></div>
+		<div class='option' id='option6'></div>
+		<div class='option' id='option7'></div>
+		<div class='option' id='option8'></div>
+		<div class='option' id='option9'></div>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+
+let options = document.querySelectorAll('.option')
+	post1 = document.querySelector('#post1')
+	post2 = document.querySelector('#post2')
+	post3 = document.querySelector('#post3')
+	post4 = document.querySelector('#post4')
+	post5 = document.querySelector('#post5')
+	post6 = document.querySelector('#post6')
+	post7 = document.querySelector('#post7')
+	post8 = document.querySelector('#post8')
+	post9 = document.querySelector('#post9')
+
+options.forEach(item=>{
+	item.onclick=function() {
+		id=item.id
+		console.log(id)
+		split = id.split('option')
+		console.log(split)
+		ref = split[1]
+		console.log(ref)
+		console.log('click')
+		element = document.querySelector('#post'+ref)
+		element.scrollIntoView({
+			behavior: "smooth"
+		})
+	}
+})
+
+</script>
+</html>
