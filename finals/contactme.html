@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact me</title>
+</head>
+
+<style type="text/css">
+	
+	body, html{
+		background-color: black;
+		width: 100%;
+		height: 100%;
+	}
+
+	.dnd{
+		width: auto;
+		height: 53px;
+   		filter: blur(0px);
+	}
+
+   	.dnd:hover{
+   		filter: blur(3px);
+   	}
+
+	@keyframes forplaceholder {
+ 		0% {opacity: 1.0;}
+ 		2.5%{opacity: 0.975;}
+ 		5% {opacity: 0.95;}
+ 		7.5%{opacity: 0.925;}
+ 		10% {opacity: 0.9;}
+ 		12.5%{opacity: 0.875;}
+ 		15% {opacity: 0.85;}
+ 		17.5%{opacity: 0.825;}
+ 		20% {opacity: 0.8;}
+ 		22.5%{opacity: 0.775;}
+ 		25% {opacity: 0.75;}
+ 		27.5%{opacity: 0.725;}
+ 		30% {opacity: 0.7;}
+ 		32.5%{opacity: 0.675;}
+ 		35% {opacity: 0.65;}
+ 		37.5%{opacity: 0.625;}
+ 		40% {opacity: 0.6;}
+ 		42.5%{opacity: 0.575;}
+ 		45% {opacity: 0.55;}
+ 		47.5%{opacity: 0.525;}
+ 		50% {opacity: 0.5;}
+ 		52.5%{opacity: 0.475;}
+ 		55% {opacity: 0.45;}
+ 		57.5%{opacity: 0.425;}
+ 		60% {opacity: 0.4;}
+ 		62.5%{opacity: 0.375;}
+ 		65% {opacity: 0.35;}
+ 		67.5%{opacity: 0.325;}
+ 		70% {opacity: 0.3;}
+ 		72.5%{opacity: 0.275;}
+ 		75% {opacity: 0.25;}
+ 		77.5%{opacity: 0.225;}
+ 		80% {opacity: 0.2;}
+ 		82.5%{opacity: 0.175;}
+ 		85% {opacity: 0.15;}
+ 		87.5%{opacity: 0.125;}
+ 		90% {opacity: 0.1;}
+ 		92.5%{opacity: 0.075;}
+ 		95% {opacity: 0.05;}
+ 		97.5%{opacity: 0.025;}
+ 		100% {opacity: 0.0;}
+	}
+
+   	.placeholder{
+   		opacity: 0.0;
+   		width: 500px;
+   		height: auto;
+		top: 330px;
+		position: absolute;
+		left: 50%;
+		margin-left: -250px;
+		animation: forplaceholder;
+		animation-duration: 8s;
+		animation-iteration-count: 1;
+   	}
+
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ 	 	color: #C9FFAF;
+ 	 	font-weight: bold;
+ 	 	font-size: large;
+ 	 	text-align: center;
+ 	 	letter-spacing: 0.1em;
+ 	 	background-color: #444444;
+	}
+
+	.placeholder:hover{
+		opacity: 1.0;
+	}
+
+</style>
+
+<body>
+
+	<div>
+		<a href="index.html">
+		<img class="dnd" src="assets/about/aboutdnd.png"
+		style="position: absolute; top: 50px; left: 100px;">
+		<a/>
+	</div>
+
+	<div class="placeholder">
+		<input class="placeholder" placeholder="your email?" type="text" name="email" style="top: 0px; box-shadow: 0px 0px 15px 5px pink;">
+		<input class="placeholder" placeholder="tell me something" type="text" name="text" style="top: 40px; box-shadow: 0px 0px 15px 5px pink;">
+	</div>
+
+</body>
+</html>
